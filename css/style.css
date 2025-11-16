@@ -193,15 +193,22 @@ padding-top: 6px;
 }
 
 .header_logo {
-    width: 50px;   /* largeur du logo */
-    height: auto;
+    width: 61.09px;
+    height: 19px
 }
 h1 {
     font-size: 100%;
     margin-bottom: 0px
 }
-.sous_titre {
+h2{
+    font-size: 100%;
+
+}
+
+
+h3{
     margin-top: 6px;
+    font-size: 100%;
 }
 .div_h1 {
     margin-top: 50px;
@@ -216,7 +223,7 @@ h1 {
     margin-bottom: 30px;
 }
 
-.fa-solid{
+.location{
     color: black;
     padding: 10px;
     border: 1px solid #F2F2F2;
@@ -227,6 +234,8 @@ h1 {
 form{
     display: flex;
     border: 1px solid #F2F2F2;
+    border-radius: 0px 10px 10px 0px;
+    border-right: none;
 }
 
 input{
@@ -237,5 +246,21 @@ input[type="submit"] {
     background-color: #0065FC;
     border-radius: 0px 10px 10px 0px;
     color: white;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 1px solid #D9D9D9;
+}
+
+.filtres{
+    display: flex;
+    margin-bottom: 10px;
+    gap: 10px;
+
 }
 
