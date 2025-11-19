@@ -203,14 +203,6 @@ h1 {
     font-size: 100%;
     margin-bottom: 0px
 }
-h2{
-    font-size: 100%;
-}
-
-h3{
-    font-size: 100%;
-    margin-top: 6px;
-}
 
 .div_h1 {
     margin-top: 50px;
@@ -300,6 +292,91 @@ input[type="submit"] {
 .card img {
     height: 124px;
     width: 250px;
+}
+
+h2{
+    font-size: 100%;
+}
+
+h3{
+    font-size: 100%;
+    margin-top: 6px;
+}
+
+
+
+.populaires {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 30px;
+    width: 32%;         /* largeur colonne droite sur desktop (maquette) */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.populaires-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.populaires-title h2 {
+    font-size: 22px;
+    margin: 0;
+}
+
+/* CONTENEUR DES CARTES */
+.populaires-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* CARTES (card2, card3, card4) */
+.populaires-cards article {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    gap: 15px;
+    height: 146px; /* hauteur exacte de la maquette */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* IMAGE */
+.populaires-cards img {
+    width: 35%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+}
+
+/* CONTENU TEXTE */
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.card-title {
+    font-size: 16px;
+    margin: 0;
+}
+
+.card-subtitle {
+    font-size: 14px;
+    margin: 5px 0 0 0;
+}
+
+/* ÉTOILES */
+.card-rating i {
+    color: #0065FC;
+}
+
+.neutral-star {
+    color: #F2F2F2;
 }
 
 
