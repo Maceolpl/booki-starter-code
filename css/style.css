@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0px;
 }
 
 .main-container {
@@ -167,83 +168,128 @@ a {
 }
 
 
-
-
-
-
-
-
-.menu-header {
-    display: flex;         /* met les éléments sur la même ligne */
-    justify-content: flex-end;
-    list-style: none;      /* enlève les puces */
-    margin: 0;
-    padding: 0;
-    gap: 40px;             /* espace entre les liens */
-}
-
-.link-hebergement:hover {
-border-top: 3px solid #0065FC;
-padding-top: 6px;
-}
-
-.link-activites:hover {
-border-top: 3px solid #0065FC;
-padding-top: 6px;
-}
-
-.header_logo {
-    width: 61.09px;
-    height: 19px
-}
-
-
-
-h1 {
-    font-size: 100%;
-    margin-bottom: 0px
-}
-
-.div_h1 {
-    margin-top: 50px;
-}
-
-
-
-.div_recherche {
+/* PARTIE HEADER */
+header{
     display: flex;
-    gap: 0px;
+    height: 79px;
+}
+
+.header-logo-link{
+    height: 19px;
+    padding-bottom: unset;
+    padding-top: unset;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.location{
+.header-logo {
+    width: 61.09px;
+    height: 19px
+}
+
+nav{
+    margin-left: auto;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    list-style: none;
+    font-size: 16px;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    gap: 68px;
+}
+
+.nav-link-hebergement:hover,
+.nav-link-activites:hover {
+    border-top: 2px solid #0065FC;
+    padding-top: 14px;
+}
+
+
+/* TITLES MENU */
+.menu {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 8px;
+}
+
+.menu p{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+
+/* SEARCH MENU */
+.menu-recherche {
+    display: flex;
+    gap: 0px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.location{ /* logo */
     color: black;
-    padding: 10px;
     border: 1px solid #F2F2F2;
     border-radius: 10px 0px 0px 10px;
     background-color: #F2F2F2;
+    width: 50px;
+    height: 49px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    DISPLAY: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-form{
+form{ /* FORMULAIRE BARRE DE RECHERCHE + SUBMIT */
     display: flex;
     border: 1px solid #F2F2F2;
     border-radius: 0px 10px 10px 0px;
     border-right: none;
 }
 
-input{
+input{ /* BARRE DE RECHERCHE + SUBMIT */
     border: none;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    justify-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
 }
 
 input[type="submit"] {
     background-color: #0065FC;
     border-radius: 0px 10px 10px 0px;
     color: white;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 16px;
+    FONT-SIZE: 18px;
+    font-weight: 700;
+    width: 132px;
+    height: 49px;
 }
 
 [class^="btn"] {
-    padding: 10px 20px;
+    padding: 13px 20px;
     background: white;
     color: black;
     text-decoration: none;
@@ -255,82 +301,115 @@ input[type="submit"] {
     gap: 10px;
     font-weight: 700;
     align-items: center;
+    border-bottom-width: 2px;
+    border-top-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
 }
 
-.filtres{
+
+/* FILTERS MENU */
+.menu-filtres{
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 35px;
     gap: 15px;
     width: 758px;
     height: 50px;
     align-items: center;
 }
 
-.filtres_title{
+.menu-filtres P{
     font-size: 18px;
     font-weight: 700;
 }
 
-.fa-circle{
-    background-color: white;
-    color: #0065FC;
-    border-color: grey;
+
+/* INFO MENU */
+.menu-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.card{
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  border-radius: 5px; /* 5px rounded corners */
-  width: 250px;
+.menu-info-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    color: #0065FC;
+    border: 1px solid #D9D9D9;
+    border-radius: 90px
 }
+
+/* SECTION HEBERGEMENT */
+.hebergements-card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+    gap: 20px; /* espace entre les cards */
+    margin: 0px;
+}
+
+.hebergements-card{
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s 
+ease, box-shadow 0.2s 
+ease;
+    height: 207.25px;
+}
+
+.hebergements-card-grid img{
+    width: 100%;
+    height: 124px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+    padding-bottom: 5px;
+}
+
+.hebergements-card-form{
+    background: white;
+    border-radius: 15px;
+    overflow: hidden; /* arrondit aussi l’image */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 207.25px;
+}
+
+.hebergements-card-description h4{
+    font-size: 16px;
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 0px;
+}
+
+.hebergements-card-description p{
+    margin: 0;
+    color: #555;
+    font-size: 14px;
+    margin-top: 8px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+}
+
+
+
+
+
+
 
 /* Add rounded corners to the top left and the top right corner of the image */
 .port {
   border-radius: 5px 5px 0 0;
 }
 
-.card img {
-    height: 124px;
-    width: 250px;
-}
-
-h2{
-    font-size: 100%;
-}
-
 h3{
     font-size: 100%;
     margin-top: 6px;
-}
-
-
-
-.populaires {
-    background-color: #F2F2F2;
-    border-radius: 20px;
-    padding: 30px;
-    width: 32%;         /* largeur colonne droite sur desktop (maquette) */
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.populaires-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.populaires-title h2 {
-    font-size: 22px;
-    margin: 0;
-}
-
-/* CONTENEUR DES CARTES */
-.populaires-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
 }
 
 /* CARTES (card2, card3, card4) */
@@ -344,13 +423,9 @@ h3{
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
+
 /* IMAGE */
-.populaires-cards img {
-    width: 35%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px 0 0 20px;
-}
+
 
 /* CONTENU TEXTE */
 .card-content {
@@ -360,32 +435,17 @@ h3{
     padding: 5px 0;
 }
 
-.card-title {
-    font-size: 16px;
-    margin: 0;
-}
-
 .card-subtitle {
     font-size: 14px;
     margin: 5px 0 0 0;
-}
-
-/* ÉTOILES */
-.card-rating i {
-    color: #0065FC;
 }
 
 .neutral-star {
     color: #F2F2F2;
 }
 
-/* Étoiles */
-.card-rating {
-    padding: 0 15px 15px;
-    color: #0065FC;
-}
 
-.card p {
+.card1 p {
     margin: 0;
     color: #555;
     font-size: 14px;
@@ -395,7 +455,7 @@ h3{
     margin-bottom: 8px;
 }
 
-.card h4 {
+.card1 h4 {
     font-size: 16px;
     margin-top: 0px;
     margin-left: 15px;
@@ -403,7 +463,7 @@ h3{
     margin-bottom: 0px;
 }
 
-.card img {
+.card1 img {
     width: 100%;
     height: 124px;
     object-fit: cover;
@@ -411,7 +471,7 @@ h3{
     padding-bottom: 5px;
 }
 
-.card {
+.card1 {
     background: white;
     border-radius: 15px;
     overflow: hidden; /* arrondit aussi l’image */
@@ -420,17 +480,39 @@ h3{
     height: 207.25px;
 }
 
-.hebergements {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
-    gap: 20px; /* espace entre les cards */
-    margin-top: 20px;
-}
-
 b {
     font-weight: bolder;
 
 }
+
+.card-rating1{
+    padding: 0 15px 15px;
+}
+
+.populaires {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 30px;
+    width: 32%;         /* largeur colonne droite sur desktop (maquette) */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* CONTENEUR DES CARTES */
+.populaires-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.populaires-cards img {
+    width: 35%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+}
+
 
 
 
