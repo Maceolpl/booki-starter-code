@@ -311,7 +311,7 @@ input[type="submit"] {
     height: 49px;
 }
 
-[class^="btn"] {
+.menu-filtres-button {
     padding: 13px 20px;
     background: white;
     color: black;
@@ -330,7 +330,7 @@ input[type="submit"] {
     border-right-width: 2px;
 }
 
-[class^="btn"]:hover {
+.menu-filtres-button:hover {
     background-color: #DEEBFF;
 }
 
@@ -345,7 +345,7 @@ input[type="submit"] {
     align-items: center;
 }
 
-.menu-filtres P {
+.menu-filtres h2 {
     font-size: 18px;
     font-weight: 700;
 }
@@ -371,8 +371,14 @@ input[type="submit"] {
 
 /* SECTION HEBERGEMENT */
 
-.hebergements h2 {
+.section-title {
     padding-bottom: 30px;
+}
+
+.section-subtitle{
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 30px;
 }
 
 .hebergements-card-grid {
