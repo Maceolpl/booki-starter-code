@@ -123,29 +123,36 @@ a {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+    width: 68px;
+    height: 12px;
+    display: flex;
 }
 
 /****** HEADER *******/
 header {
     display: flex;
+    align-items: center;
     height: 79px;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
 .header-logo-link {
-    height: 19px;
-    padding-bottom: unset;
-    padding-top: unset;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    display: inline-flex;
+    align-items: center;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
 }
 
 .header-logo {
     width: 61.09px;
     height: 19px
-}
-
-nav {
-    margin-left: auto;
 }
 
 .nav-list {
@@ -262,7 +269,7 @@ input[type="submit"] {
     background: white;
     color: black;
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 30px;
     border: 1px solid #D9D9D9;
     height: 20px;
     font-size: 17px;
@@ -280,6 +287,13 @@ input[type="submit"] {
     background-color: #DEEBFF;
 }
 
+.menu-filtres ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0;
+}
+
 /***** FILTERS MENU ******/
 
 .menu-filtres {
@@ -291,13 +305,13 @@ input[type="submit"] {
     align-items: center;
 }
 
-.menu-filtres h2 {
+.menu-filtres h3 {
     font-size: 18px;
     font-weight: 700;
 }
 
 @media (max-width: 375px) {
-    .menu-filtres h2 {
+    .menu-filtres h3 {
         width: 100%;
     }
 }
@@ -310,7 +324,7 @@ input[type="submit"] {
     gap: 10px;
 }
 
-.menu-info-logo {
+.fa-info {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -335,9 +349,8 @@ input[type="submit"] {
 }
 
 .hebergements-card-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* 3 colonnes */
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     margin: 0px;
 }
@@ -396,6 +409,10 @@ input[type="submit"] {
 .hebergements-card-rating {
     margin-left: 15px;
     padding-bottom: 0px;
+    display: flex;
+    width: 81px;
+    height: 13.25px;
+    padding-top: 8px;
 }
 
 /***** Activités *****/
@@ -518,19 +535,17 @@ footer ul {
         padding: 0px;
     }
 
-    header {
+    nav {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 0px;
+        padding: 0px;
     }
 
     .header-logo-link {
         margin: 0px;
         padding: 30px;
-    }
-
-    nav {
-        margin: 0px;
-        padding: 0px;
     }
 
     .nav-list {
