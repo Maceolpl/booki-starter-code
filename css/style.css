@@ -297,7 +297,7 @@ input[type="submit"] {
     display: flex;
     margin-bottom: 35px;
     gap: 15px;
-    width: 758px;
+    width: 100%;
     height: 50px;
     align-items: center;
 }
@@ -418,6 +418,8 @@ input[type="submit"] {
     justify-content: center;
     gap: 30px;
     PADDING-BOTTOM: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 #ancre-activites h2 {
@@ -434,11 +436,12 @@ input[type="submit"] {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 20px;
+    width: 100%;
 }
 
 .activite-card img {
     border-radius: 20px 20px 0 0;
-    width: 297.5px;
+    width: 100%;
     height: 380px;
     object-fit: cover;
 }
@@ -456,7 +459,7 @@ footer {
     background-color: #F2F2F2;
 }
 
-footer div {
+footer section {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -514,6 +517,18 @@ footer ul {
         flex-direction: column;
     }
 
+    .hebergements-card-grid {
+        justify-content: CENTER;
+    }
+
+    .hebergements-card-grid a {
+        width: 30%;
+    }
+
+    .hebergements-card {
+        width: 100%;
+    }
+
     .hebergements {
         width: 100%;
     }
@@ -553,8 +568,9 @@ footer ul {
     }
 
     .activite {
-        height: auto;
+        height: 270px;
         width: 100%;
+        padding: 0px
     }
 
     .activite-card {
@@ -571,18 +587,20 @@ footer ul {
 
     .activite-card-container {
         width: auto;
-        height: auto;
+        height: 70px;
         padding-left: 19px;
         padding-right: 19px;
         display: flex;
+        flex-wrap: wrap;
+        align-content: center;
         align-items: center;
-        padding-top: 20px;
+        padding-top: 0px;
         border-bottom-width: 20px;
     }
 
     .activite-card-container h4 {
-        width: auto;
-        height: 100%;
+        width: 100%;
+        height: auto;
         margin-top: 0px;
         margin-bottom: 0px;
     }
@@ -593,7 +611,6 @@ footer ul {
     .main-container {
         display: flex;
         flex-direction: column;
-        padding: 0px;
         gap: 30px;
         padding: 0px;
     }
@@ -643,16 +660,21 @@ footer ul {
 
     .btn-mobile {
         display: flex;
-        width: 49px;
-        height: 49px;
+        width: 50px;
+        height: 50px;
         background-color: #0065FC;
-        border: none;
+        BORDER: 1px solid #0065FC;
         border-radius: 0 10px 10px 0;
         justify-content: center;
         align-items: center;
         color: white;
-        font-size: 20px;
+        font-size: 17px;
         cursor: pointer;
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        border-radius: 15px;
     }
 
     .fa-magnifying-glass {
@@ -661,9 +683,10 @@ footer ul {
     }
 
     form {
-        border-radius: 10px;
-        width: auto;
-        justify-content: end;
+        border-radius: 0PX 15PX 15PX 0PX;
+        justify-content: space-between;
+        width: 84%;
+        height: 48px;
     }
 
     .menu-recherche {
@@ -672,6 +695,8 @@ footer ul {
 
     .location {
         width: 48px;
+        height: 48px;
+        border-radius: 15PX 0PX 0PX 15PX;
     }
 
     /* Filtres */
@@ -692,21 +717,6 @@ footer ul {
         font-size: 14px;
         width: 35%;
     }
-
-    [class^="btn"] {
-        justify-content: center;
-        width: 49px;
-        height: 49px;
-        padding-top: 0px;
-        padding-left: 0px;
-        padding-bottom: 0px;
-        padding-right: 0px;
-        border-radius: 15px;
-        border-top-width: 1px;
-        border-bottom-width: 1px;
-        border-left-width: 1px;
-    }
-
 
     /* Sections */
     .hebergements-and-populaires {
@@ -740,6 +750,10 @@ footer ul {
     .hebergements-card-grid {
         grid-template-columns: 1fr;
         gap: 15px;
+    }
+
+    .hebergements-card-grid a {
+        width: 100%;
     }
 
     .hebergements-card {
@@ -786,17 +800,18 @@ footer ul {
     }
 
     #ancre-activites h2 {
-        padding-left: 30px;
+        padding-left: 0px;
     }
 
     .activite {
         flex-direction: column;
         align-items: center;
-        padding-bottom: 0px;
+        padding: 0px;
+        height: auto;
     }
 
     .activite-card {
-        width: 315px;
+        width: 100%px;
 
     }
 
@@ -827,11 +842,12 @@ footer ul {
         gap: 50px;
     }
 
-    footer div {
+    footer section {
         padding-left: 30px;
         padding-top: 0px;
         padding-bottom: 0px;
         height: auto;
+        width: auto;
     }
 
     .footer-a-propos {
