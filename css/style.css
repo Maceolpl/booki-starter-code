@@ -645,6 +645,7 @@ footer ul {
         gap: 0px;
         width: 100%;
         justify-content: center;
+        align-items: start;
     }
 
     .nav-link-hebergement:hover,
@@ -662,7 +663,7 @@ footer ul {
         padding-bottom: 15px;
     }
 
-    nav li:hover{
+    nav li:hover {
         border-bottom: 2px solid #0065FC;
     }
 
