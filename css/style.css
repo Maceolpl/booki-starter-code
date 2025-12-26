@@ -506,6 +506,10 @@ footer ul {
         flex-direction: column;
     }
 
+    .menu {
+        margin-bottom: 35px;
+    }
+
     .menu-filtres {
         flex-wrap: wrap;
         width: 100%;
@@ -518,10 +522,14 @@ footer ul {
         flex-wrap: wrap;
         height: auto;
         width: 100%;
+        margin-bottom: 0px;
+        margin-top: 0px;
     }
 
     .menu-filtres h3 {
         width: 100%;
+        margin-top: 0px;
+        margin-bottom: 5px;
     }
 
     .hebergements-and-populaires {
