@@ -631,7 +631,7 @@ footer ul {
     .main-container {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 35px;
         padding: 0px;
     }
 
@@ -875,6 +875,7 @@ footer ul {
     footer {
         flex-direction: column;
         gap: 50px;
+        margin-top: 0px;
     }
 
     footer section {
